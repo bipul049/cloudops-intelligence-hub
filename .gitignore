@@ -1,0 +1,22 @@
+# AWS credentials — never commit these
+.env
+*.pem
+*.key
+credentials
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Conda
+.conda/
+
+# macOS
+.DS_Store
+
+# Reports (optional — remove if you want to commit them)
+# reports/
+# runbooks/

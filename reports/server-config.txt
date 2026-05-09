@@ -1,0 +1,7 @@
+# CloudOps Hub - Sample Server Config
+environment: production
+region: eu-west-1
+instance_type: t3.micro
+monitoring: enabled
+backup_schedule: daily
+owner: bipul.singh

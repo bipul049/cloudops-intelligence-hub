@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__cloudops-mcp__list_ec2_instances",
+      "mcp__cloudops-mcp__get_s3_bucket_size",
+      "mcp__cloudops-mcp__get_ec2_cpu",
+      "mcp__cloudops-mcp__list_cloudwatch_alarms",
+      "mcp__cloudops-mcp__get_monthly_cost",
+      "mcp__cloudops-mcp__list_s3_buckets"
+    ]
+  }
+}
