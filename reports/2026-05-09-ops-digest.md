@@ -7,7 +7,7 @@
 
 | Area | Status |
 |---|---|
-| EC2 | 1 running instance, idle (CPU 0.18%) |
+| EC2 | 1 running instance, idle (CPU 0.17%) |
 | S3 | 3 buckets; demo bucket near-empty |
 | CloudWatch Alarms | 1 alarm, OK |
 | Cost (MTD) | $0.00 |
@@ -18,7 +18,7 @@ No incidents. Environment idle and within free-tier usage.
 
 | Name | Instance ID | Type | State | AZ | Public IP | Launched | CPU (60m avg) |
 |---|---|---|---|---|---|---|---|
-| cloudops-hub-demo | i-06fa60b0496bf04d6 | t3.micro | running | eu-west-1b | 54.154.117.157 | 2026-05-09 13:01 UTC | 0.18% |
+| cloudops-hub-demo | i-06fa60b0496bf04d6 | t3.micro | running | eu-west-1b | 54.154.117.157 | 2026-05-09 13:01 UTC | 0.17% |
 
 No instances above the 70% CPU threshold.
 
@@ -51,6 +51,6 @@ Total spend is $0.00 — comfortably within free tier.
 
 ## Recommendations
 
-1. **Right-size or stop idle EC2** — `cloudops-hub-demo` is averaging 0.18% CPU. If only used ad-hoc, stop it when not in use to extend free-tier hours.
+1. **Right-size or stop idle EC2** — `cloudops-hub-demo` is averaging 0.17% CPU. If only used ad-hoc, stop it when not in use to extend free-tier hours.
 2. **Add a billing alarm** — only a CPU alarm exists today. Add a low-threshold billing alarm (e.g. > $1) so cost surprises page you before they grow.
 3. **Audit the legacy `cf-templates-*` bucket** — auto-created by CloudFormation in `us-east-1`, outside the primary `eu-west-1` region. Confirm it's still needed; if not, empty and delete to reduce surface area.
